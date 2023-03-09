@@ -1,4 +1,4 @@
-## Project Name : SCID - Sand Control Installation Decision-making Tool
+## Project Name : GLID - Gas Lift Installation Decision-making Tool
 
 ## Table of Contents
 - [Project overview](#Overview)
@@ -8,16 +8,14 @@
 - [Acknowledgement](#Acknowledgement)
 
 ## Overview
-**SCID** is a **S**and **C**ontrol **I**nstallation **D**ecision-making software designed for Production and other Energy experts 
-for faster and reliable decision making on whether to install Sand Control facilities or not. 
-
+**GLID** is a **G**as **L**ift **I**nstallation **D**ecision-making software, designed for Production and other 
+Energy experts for faster and reliable decision making on whether to Gas lift a well or not. 
 It's credibility is attributed to it's vast factor considerations leveraging various information of the well 
 such as; 
 1. Reservoir Characteristics
 2. Production information
-3. Completion types
-4. Environmental impact information
-5. Economic feasibility information
+3. Environmental impact information
+4. Economic feasibility information
 
 **Note**: This project is part of a Test Project for a Petroleum Engineering Graduate internship position at CypherCrescent. 
 
@@ -26,14 +24,14 @@ such as;
 
 ## Installation
 ```
-git clone https://github.com/Ekeopara-Praise/Sand-Control-Installation-App.git
+git clone https://github.com/Ekeopara-Praise/Gas-Lift-App.git
 ```
 ```
 pip install streamlit
 ```
 Now on the terminal, in the file directory, run
 ```
-streamlit run SCID_App.py
+streamlit run GLID_App.py
 ```
 ## Homepage
 At the homepage you will see the app running, once clicked on the Recommend button after entering necessary inputs, will apear this way;
