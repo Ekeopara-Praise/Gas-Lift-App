@@ -8,22 +8,36 @@ class Gas_Lift:
     This class contains the methods for evaluating the feasibility of Gas Lift installation.
     """
 
-    def Production_Data(self, productivity_index: str, Bottomhole_pressure: str, Gas_Liquid_Ratio: str) -> int:
+    def Production_Data(self, productivity_index: float, Bottomhole_pressure: str, Gas_Liquid_Ratio: str) -> int:
         """
         This method evaluates the feasibility of Gas Lift installation based on production data.
 
         Args:
-            productivity_index (str): The Productivity Index description of the well.
+            productivity_index (float): The Productivity Index description of the well.
             Bottomhole_pressure (str): The Bottomhole reservoir pressure description of the well.
             Gas_Liquid_Ratio (str): The Gas Liquid Ratio description of the well.
 
         Returns:
             int: A binary value (0 or 1) representing feasibility of Gas Lift installation based on the production data.
         """
-        if productivity_index in ('High', 'Low') and Bottomhole_pressure in ('High', 'Low') and Gas_Liquid_Ratio == 'High':
-            return 1
+        decision_list = []
+        if productivity_index > 0.5 and Bottomhole_pressure == 'High':
+            decision_list.append(1)
+        elif productivity_index > 0.5 and Bottomhole_pressure == 'Low':
+            decision_list.append(1)
+        elif productivity_index <= 0.5 and Bottomhole_pressure == 'High':
+            decision_list.append(1)
+        elif productivity_index <= 0.5 and Bottomhole_pressure == 'Low':
+            decision_list.append(1)
         else:
-            return 0
+            decision_list.append(0)
+
+        if Gas_Liquid_Ratio == 'High':
+            decision_list.append(1)
+        elif Gas_Liquid_Ratio == 'Low':
+            decision_list.append(1)
+        else:
+            decision_list.append(0)
 
     def Economic_Data(self, gas_availability: str, compression_costs: str) -> int:
         """
@@ -99,11 +113,10 @@ with tab1:
 
         # Add a selectbox for "Productivity Index" in the first column with a description in the help tooltip
         with col1:
-            product_index = st.selectbox(
-                "**Productivity Index**",
-                ("High", "Low", "None"),
+            product_index = st.number_input(
+                "**Productivity Index (stb/d/psi)**",
                 help="""
-                Select the suitable Productivity Index description.
+                Enter the Productivity Index value.
                 """,
             )
 
