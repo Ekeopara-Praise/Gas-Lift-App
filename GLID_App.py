@@ -186,7 +186,7 @@ with tab1:
     with col1:
         if st.button(label="Recommend", help='Click to recommend Well Gas lift or not'):
             if economic_data == 0:
-                col2.write('<span style="color: red;">**Gas lift the well!**</span>',
+                col2.write('<span style="color: red;">**Do not Gas lift the well!**</span>',
                            unsafe_allow_html=True)
             # Display a recommendation based on the most common item in the list
             elif most_common == 1:
