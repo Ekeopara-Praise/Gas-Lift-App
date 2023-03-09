@@ -81,7 +81,7 @@ tab1, tab2 = st.tabs(["**Gas Lift**", "**About**"])
 # Populate the "Gas Lift" tab with input fields and options
 with tab1:
     # Display an image in the sidebar
-    st.sidebar.image("GlIDbackground.PNG", width=300)
+    st.sidebar.image("GLIDbackground.PNG", width=300)
     st.write("")
 
     # Add a caption and link to the author's LinkedIn profile in the sidebar
