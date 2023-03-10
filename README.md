@@ -5,6 +5,7 @@
 - [Tools](#Tools)
 - [Installation](#Installation)
 - [Homepage](Homepage)
+- [Demo](#Demo)
 - [Acknowledgement](#Acknowledgement)
 
 ## Overview
@@ -36,6 +37,10 @@ streamlit run GLID_App.py
 ## Homepage
 At the homepage you will see the app running, once clicked on the Recommend button after entering necessary inputs, will apear this way;
 ![image](https://github.com/Ekeopara-Praise/Gas-Lift-App/blob/master/GLID_Homepage.PNG)
+
+## Demo
+Check out the [app](https://ekeopara-praise-sand-control-installation-app-scid-app-2i5j1w.streamlit.app/)
+
 ## Acknowledgement
 The following resources were helpful throughout the project
 - [Streamlit](https://streamlit.io/)
