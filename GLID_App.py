@@ -178,6 +178,7 @@ with tab1:
                 help='Select the suitable environmental impact of the project.',
             )
 
+
     # Create an instance of the Gas_Lift class
     gas_lift = Gas_Lift()
 
