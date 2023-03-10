@@ -65,7 +65,7 @@ class Gas_Lift:
         Returns:
             int: A binary value (0 or 1) representing feasibility of Gas Lift installation based on environmental impact data.
         """
-        if environmental_impact == 'Positive':
+        if environmental_impact == 'Minimal':
             return 1
         else:
             return 0
@@ -174,7 +174,7 @@ with tab1:
         with col1:
             impact = st.selectbox(
                 "**Environmental impact**",
-                ("Positive", "Negative"),
+                ("Minimal", "Maximal"),
                 help='Select the suitable environmental impact of the project.',
             )
 
