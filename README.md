@@ -18,7 +18,7 @@ such as;
 3. Environmental impact information
 4. Economic feasibility information
 
-**Note**: This project is part of a Test Project for a Petroleum Engineering Graduate internship position at CypherCrescent. 
+**Note**: This project is part of a Test Project for a Petroleum Engineering Graduate internship position.
 
   ## Tools
   This project was built on purely **Python** and **Streamlit** (for the UI). 
